@@ -7,3 +7,253 @@
 * {
   box-sizing: border-box;
 }
+
+
+
+@font-face {
+  font-family: 'Littledays';
+  src: url('assets/LittleDays-3168.ttf')
+}
+
+
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5vh;
+  font-weight: 600;
+  background-color: #dfdfdf;
+}
+
+
+
+
+
+/*----------*\
+*
+*   LAYOUT
+*
+\*----------*/
+
+
+/*==== HEADER STYLES ====*/
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/miroslava-mTtuQIrDZMg-unsplash.jpg') no-repeat center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 768px) {
+  header {
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('assets/miroslava-mTtuQIrDZMg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    justify-content: center;
+  }
+}
+
+
+
+
+
+/*==== MAIN CONTENT STYLES ====*/
+
+main {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+
+
+@media (max-width: 1024px) {
+  main {
+    width: 90%;
+  }
+}
+
+
+
+
+
+.intro {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+@media (max-width: 1024px) {
+  .intro {
+    flex-direction: column;
+  }
+}
+
+
+
+.box1 {
+  width: 35%;
+  height: auto;
+  background-color: #c6b7a7;
+  border-radius: 30px;
+  padding: 1.5rem;
+}
+
+
+
+@media (max-width: 1024px) {
+  .box1 {
+    width: 100%;
+    order: 1;  
+    margin-bottom: 10vh;
+  }
+}
+
+
+
+
+
+/*------------*\
+*
+*  TYPOGRAPHY
+*
+\*------------*/
+
+h1 {
+  font-family: 'Littledays';
+  font-size: 10vh;
+  line-height: 1.1;
+}
+
+
+
+h2 {
+  font-size: 3vh;
+  line-height: 2;
+}
+
+
+
+h1, h2 {
+  margin-left: 5vw;
+  color: #453428;
+}
+
+
+
+@media (max-width: 768px) {
+  h1, h2 {
+    text-align: center;
+    color: #dfdfdf;
+    margin-left: 0;    
+  }
+  
+  h1 {
+    font-size: 8vh;
+  }
+}
+
+
+
+
+
+h3 {
+  font-size: 8vh;
+  line-height: 1.1;
+  color: #dfdfdf;
+}
+
+
+
+@media (max-width: 1024px) {
+  h3 {
+    text-align: center;
+    font-size: 6vh;
+  }
+}
+
+
+
+
+p {
+  line-height: 1.2;
+  margin-top: 1rem;
+  text-align: justify;
+  color: #453428;
+}
+
+
+
+
+
+/*==== Text decoration ====*/
+
+hr {
+  width: 70%;
+  height: 1px;
+  border: 0;
+  margin-bottom: 10vh;
+  background-image: linear-gradient(to right, rgba(198, 183, 167, 78), rgba(171, 125, 75, 67), rgba(198, 183, 167, 78));
+}
+
+
+
+
+
+/*----------*\
+*
+*   IMAGES
+*
+\*----------*/
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+/*==== Border for first image ====*/
+
+.border-for-img1 {
+  width: 35%;
+  height: 55vh;
+  padding: 1rem;
+  border: 3px solid #453428;
+}
+
+
+@media (max-width: 1024px) {
+  .border-for-img1 {
+    width: 100%;
+    height: 45vh;
+    order: 2;
+  }
+}
+
+
+
+.border-for-img2 {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border: 3px solid #453428;
+}
