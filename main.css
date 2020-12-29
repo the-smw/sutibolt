@@ -68,6 +68,8 @@ header {
 
 /*==== MAIN CONTENT STYLES ====*/
 
+/* 1. Intro box */
+
 main {
   width: 80%;
   height: auto;
@@ -80,7 +82,7 @@ main {
 
 @media (max-width: 1024px) {
   main {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -126,6 +128,69 @@ main {
 }
 
 
+
+
+
+/* 2. Price table */
+
+.price-table {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+
+
+
+@media (min-width: 1200px) {
+  .price-table {
+    flex-direction: row;
+  }
+}
+
+
+
+
+
+.xmas, .party {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+@media (min-width: 1200px) {
+  .list {
+    justify-content: space-around;
+  }
+}
+
+
+
+
+
+.price ul:last-child {
+  margin-bottom: 10vh;
+}
+
+
+@media (min-width: 1200px) {
+  .price ul:last-child {
+    margin-bottom: 0;
+  }
+}
 
 
 
@@ -191,6 +256,16 @@ h3 {
 
 
 
+h4 {
+  font-family: 'Littledays';
+  font-size: 6vh;
+  color: #ab7d4b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+
 p {
   line-height: 1.2;
   margin-top: 1rem;
@@ -202,7 +277,10 @@ p {
 
 
 
+
 /*==== Text decoration ====*/
+
+/* Divider styles */
 
 hr {
   width: 70%;
@@ -210,6 +288,24 @@ hr {
   border: 0;
   margin-bottom: 10vh;
   background-image: linear-gradient(to right, rgba(198, 183, 167, 78), rgba(171, 125, 75, 67), rgba(198, 183, 167, 78));
+}
+
+
+
+
+
+/* List styles */
+
+li {
+  padding: 1rem;
+  padding-left: 0;
+}
+
+
+
+.price {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
 }
 
 
