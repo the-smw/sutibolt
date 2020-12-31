@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -83,8 +84,29 @@
         </div>
       </div>
     </div>
-    <img class="banner" src="#" alt="sutibanner">
-    <div class="gallery"></div>
+    <hr>
+    <div class="gallery">
+      <img class="slide fade" src="assets/bejgli.jpg" alt="bejgli">
+      <img class="slide fade" src="assets/mezes.jpg" alt="mezes">
+      <img class="slide fade" src="assets/sajtosrud.jpg" alt="sajtosrud">
+      <img class="slide fade" src="assets/kokuszgolyo.jpg" alt="kokuszgolyo">
+      <img class="slide fade" src="assets/puspok.jpg" alt="puspokkenyer">
+      <img class="slide fade" src="assets/csokis-mezes.jpg" alt="csokis-mezes">
+      <img class="slide fade" src="assets/hajas.jpg" alt="hajas">
+      <img class="slide fade" src="assets/sajtostaller.jpg" alt="sajtostaller">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="navigation-dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
     <div class="contact"></div>
     <div class="about">
       <h3>Rólam</h3>
