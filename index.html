@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Kató néni mézeskalács házikója</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3d47a07c59.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="script.js" defer></script>
 </head>
 <body>
   <header>
+    <nav>
+      <a class="with-hover" href="#products">Termékek</a>
+      <a class="with-hover" href="#gallery">Galéria</a>
+      <a class="with-hover" href="#contact">Kapcsolat</a>
+    </nav>
     <h1>Kató néni<br>mézeskalács házikója</h1>
     <h2>- házi készítésű sütemények a nagymama konyhájából -</h2>
   </header>
@@ -30,7 +37,7 @@
       </div>
     </div>
     <hr>
-    <div class="price-table">
+    <div  id="products" class="price-table">
       <div class="xmas">
         <h4>Édességek karácsonyra</h4>
         <div class="list">
@@ -69,6 +76,7 @@
               <li>Tepertős pogácsa</li>
               <li>Sajtos tallér</li>
               <li>Sonkás tekercs</li>
+              <li>Sajtos rúd</li>
             </ul>
           </section>
           <section class="price">
@@ -79,13 +87,14 @@
               <li>1800 Ft / kg</li>
               <li>800 Ft / adag</li>
               <li>2600 Ft / kg</li>
+              <li>900 Ft / adag</li>
             </ul>
           </section>
         </div>
       </div>
     </div>
     <hr>
-    <div class="gallery">
+    <div id="gallery" class="gallery">
       <img class="slide fade" src="assets/bejgli.jpg" alt="bejgli">
       <img class="slide fade" src="assets/mezes.jpg" alt="mezes">
       <img class="slide fade" src="assets/sajtosrud.jpg" alt="sajtosrud">
@@ -107,12 +116,66 @@
       <span class="dot" onclick="currentSlide(7)"></span>
       <span class="dot" onclick="currentSlide(8)"></span>
     </div>
-    <div class="contact"></div>
-    <div class="about">
-      <h3>Rólam</h3>
-      <p>Lorem ipsum dolor sit amet</p>
+    <hr>
+    <div class="info-box">
+      <div class="about">
+        <h4>Rólam</h4>
+        <p>Szabó Katalin vagyok, köszönöm, hogy az oldalamra látogatott!</p>
+        <p>A karácsonyi készülődés mindig is az év legkedvesebb időszaka volt számomra, főleg az unokám születése után, hiszen amint nagyobbacska lett, már együtt gyúrtuk a tésztát, díszítettük a mézeskalácsokat, így az évek során ez egyfajta hagyománnyá nőtte ki magát.</p>
+        <p>Nyugdíjazásom után, több időm lévén szívesen segítettem barátoknak, később pedig már a szomszédaimnak is az ünnepi sütögetésben, így hamarosan a családom bíztatására és támogatásával megalapítottam szerény kis vállalkozásomat, hogy minél több családnak segíthessek karácsonyi hangulatot varázsolni az ünnepi asztalra.</p>
+        <p>Amennyiben rendelni szeretne, vagy kérdése van, forduljon hozzám bizalommal az alábbi elérhetőségek egyikén!</p>
+      </div>
+      <img class="logo" src="assets/mezes.png" alt="logo">
+      <div class="feedback">
+        <h4 class="fb-toggle">Vélemények <i class="fas fa-chevron-down"></i></h4>
+        <div class="fb-box">
+          <div class="item fade-in">
+            <p>Puha, omlós mézeskalácsok, szép díszítéssel, köszönjük!</p>
+            <p class="name">B. Julianna</p>
+          </div>
+          <div class="item fade-in">
+            <p>A tiramisu golyók annyira finomak voltak, hogy pillanatok alatt elkapkodta a család, legközelebb biztosan dupla adagot rendelünk!</p>
+            <p class="name">Sz. Ildikó</p>
+          </div>
+          <div class="item fade-in">
+            <p>Nagyon finom volt a sajtos rúd, egyáltalán nem volt száraz, hamar el is fogyott.</p>
+            <p class="name">B. Zoltán</p>
+          </div>
+          <div class="item fade-in">
+            <p>Tényleg igazi, gyerekkort idéző házisütemények, ár-érték arányban is megéri, nagyon örülök, hogy rátaláltam erre az oldalra!</p>
+            <p class="name">K. Gizi</p>
+          </div>
+          <div class="item fade-in last">
+            <p>Mindhárom fajta bejglit kipróbáltuk, nem tudtuk eldönteni, melyik a legfinomabb. A kókuszgolyó is nagyon ízlett!</p>
+            <p class="name">Sz. Csilla</p>
+          </div>
+        </div>
+      </div>
     </div>
+    <hr>
+    <div id="contact" class="contact">
+      <h4>Kapcsolat</h4>
+      <div class="contact-box">
+        <section class="email">
+          <i class="fas fa-envelope"></i>
+          <p>katoneni.suti@mail.hu</p>
+        </section>
+        <img class="img-for-mobile" src="assets/pexels-%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BD%D0%B0-%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B0-3750709.jpg" alt="tea">
+        <section class="phone">
+          <i class="fas fa-phone"></i>
+          <p>0612 345 6789</p>
+        </section>
+      </div>
+    </div>
+    <hr>
+    <img class="closing" src="assets/reindeer.jpg" alt="reindeer">
+    <a class="top-link" id="js-top" href="#top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
   </main>
-  <footer></footer>
+  <footer>
+    <p><small>Kató néni mézeskalács házikója © 2021 Minden jog fenntartva</small></p>
+    <div class="links">
+      <a href="#">Impresszum |</a>
+      <a href="#">Adatvédelmi szabályzat</a></div>
+  </footer>
 </body>
 </html>

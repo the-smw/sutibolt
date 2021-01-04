@@ -1,3 +1,7 @@
+// 1. Slideshow gallery
+
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -26,3 +30,52 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+
+
+// 2. Feedback toggle
+
+$(document).ready(function(){
+  $(".fb-toggle").click(function(){
+    $(".fb-box").toggle();
+  });
+});
+
+
+
+
+
+// Scroll To Top Button
+
+const scrollToTopButton = document.getElementById('js-top');
+
+const scrollFunc = () => {
+  let y = window.scrollY; 
+  if (y > 0) {
+    scrollToTopButton.className = "top-link show";
+  } else {
+    scrollToTopButton.className = "top-link hide";
+  }
+};
+
+
+window.addEventListener("scroll", scrollFunc);
+
+
+const scrollToTop = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {   window.requestAnimationFrame(scrollToTop);
+              window.scrollTo(0, c - c / 30);
+  }
+};
+
+
+scrollToTopButton.onclick = function(e) {
+  e.preventDefault();
+  scrollToTop();
+}
+
+
+
+
