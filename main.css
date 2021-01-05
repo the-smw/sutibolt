@@ -416,6 +416,11 @@ footer {
 
 
 
+.links {
+  text-align: center;
+}
+
+
 
 
 
@@ -426,7 +431,7 @@ footer {
 \*------------*/
 
 h1 {
-  font-family: 'Littledays';
+  font-family: 'Littledays', cursive;
   font-size: 10vh;
   line-height: 1.1;
 }
@@ -482,7 +487,7 @@ h3 {
 
 
 h4 {
-  font-family: 'Littledays';
+  font-family: 'Littledays', cursive;
   font-size: 6vh;
   color: #ab7d4b;
   margin-bottom: 1rem;
@@ -587,6 +592,25 @@ footer a {
 footer a:hover {
   color: #dfdfdf;
   font-weight: 800;
+}
+
+
+
+
+
+/*==== Cookie box text styles ====*/
+
+.cookie-container p {
+  font-size: 1.5vh;
+  color: #dfdfdf;
+  margin-top: 0;
+}
+
+
+
+.cookie-container a {
+  text-decoration: none;
+  color: #C6B7A7;
 }
 
 
@@ -966,4 +990,64 @@ to {opacity: 1}
 .hide {
   visibility: hidden;
   opacity: 0;
+}
+
+
+
+
+
+/*==== 7. Cookie consent box ====*/
+
+.cookie-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(69, 52, 40, .8);
+  padding: 1rem;
+  box-shadow: 0 -2px 16px #453428;
+}
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  .cookie-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+
+
+.cookie-btn {
+  border: 0;
+  border-radius: 10px;
+  background: #dfdfdf;
+  color: #453428;
+  padding: .5rem .8rem;
+  font-size: 1.5vh;
+  font-weight: 700;
+  margin-top: .5rem;
+  cursor: pointer;
+}
+
+
+
+.cookie-btn:hover {
+  background: #C6B7A7;
+  color: #dfdfdf;
+}
+
+
+@media (min-width: 1200px) {
+  .cookie-btn {
+    margin-top: 0;
+  }
 }
